@@ -1,4 +1,9 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import Hooks from '../../components/Hooks';
 
+export default () => {
+  const { search = '?=' } = useLocation();
 
-export default () => <h1>Главная страница</h1>
+  return <Hooks title={search.split('=')[1]} />;
+};

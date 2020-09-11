@@ -10,7 +10,7 @@ export default class App extends React.PureComponent {
         <nav>
           <ul>
             <li>
-              <Link to="/">ROOT</Link>
+              <Link to="/pageParams?title=Какой-то тайтл">ROOT</Link>
             </li>
             <li>
               <Link to="/somepage">PAGE1</Link>
